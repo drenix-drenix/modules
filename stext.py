@@ -20,7 +20,7 @@ class Text2stickMod(loader.Module):
 
 	@loader.owner
 	async def stextcmd(self, message):
-		""".stext (текст или реплай)"""
+		"""(текст или реплай)"""
 		await message.delete()
 		text = utils.get_args_raw(message)
 		reply = await message.get_reply_message()
